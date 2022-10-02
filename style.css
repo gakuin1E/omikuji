@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100vh;
+}
+main{
+  text-align: center;
+}
+main .miko::before{
+  background-image: url(omikuji.jpg);
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  }
+main h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    color: white;
+    font-weight: bold;
+  }
+@media screen and (max-width:767.98px){
+  main h1{
+    font-size: 50px;
+  }
+}
+@media screen and (min-width:768px){
+  main h1{
+    font-size: 70px;
+  }
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+a.btn-border:hover {
+  color: #fff;
+  background: #000;
+}
+
+
+
+
+
+footer .copyright{
+  padding: 20px;
+}
+footer .copyright p{
+  padding-top: 25vh;
+  font-size: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
