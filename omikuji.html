@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>おみくじ</title>
+    <link rel="stylesheet" href="omikuji.css">
+  </head>
+<body>
+	<script type="text/javascript">
+		var imglist = new Array(
+			"./daikiti.jpg",
+			"./chuukiti.jpg",
+			"./shoukiti.jpg",
+			"./kiti.jpg" );
+		var selectnum = Math.floor(Math.random() * imglist.length);
+		var output = "<img src=" + imglist[selectnum] + ">";
+		document.write(output);
+	</script>
+</body>
+</html>
